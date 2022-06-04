@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dinas Kominfo</title>
+  <script type="text/javascript">
+    function login() {
+      var done = 0;
+      var username = document.fform.username.value;
+      username = username.toLowerCase();
+      var password = document.fform.password.value;
+      password = password.toLowerCase();
+      if (username == "informatika" && password == "pweb"){
+        alert("Selamat anda berhasil login!");
+        window.location.href="beranda.html"
+      } 
+      else
+        if (done == 0) {
+          alert("Username/Password yang anda masukan salah!");
+        }
+    }
+    
+  </script>
+  <style type="text/css">
+    .content {
+      width: 100%;
+      height: 300px;
+      padding-left: 35%;
+    }
+    .div1{
+      width: 30%;
+      height: 225px;
+      float: let;
+      border-style: inset;
+      background-color: white;
+      padding : 10px;
+    }
+    .log{
+      padding-top: 50px;
+      align-content: center;
+      width: 60%px;
+      height: 18px;
+      border-left: 6px solid red;
+      background-color: #DCDCDC;
+      padding: 10px;
+
+    }
+    .label {
+      display: block;
+      margin-bottom: .5rem;
+    }
+    .input {
+      display: block;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    #tombol {
+      background: red;
+      color: #fafafa;
+      border: 0;
+      width: 100%;
+      padding: 10px 0;
+      margin-top: .5rem;
+      border-radius: 5px;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: inherit;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr style="background-color: #49a7f3;">
+        <td>
+          <table border="0" width="100%">
+            <tr>
+            <td align="left"><img src="logoB.png"></td>
+            <td align="right"><img src="istimewa-2.png"><img src="jogja.png">
+            </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <table border="0" width="100%" height="70">
+          <tr align="middle">
+            <td>
+            <a href="projek.html">Beranda <br>
+            <a href="login.html"><p id="profil">Login</p>
+            </td>
+            <td><li class="cn-dropdown-item has-down">
+              <a href="#">Profil</a>
+                <li>
+                  <a href="#">Visi & Misi</a>
+                </li>
+            </td>
+            </li>
+            <td>Program & Kegiatan
+                <li class="cn-dropdown-item">
+                  <a href="#">Tahun Anggaran 2016</a>
+                </li>
+                <li>
+                  <a href="#">Dokument renstra</a>
+                </li>
+            </td>
+            <td>Informasi
+              <li>
+                <a href="#">Informasi Publik</a>
+              </li>
+              <li>
+                <a href="#">Standar Layanan Publik</a>
+              </li>
+            </td>
+            <td>Berita</td>
+            <td><a href="gallery.html">Galeri</td>
+            <td>Layanan</td>
+            <td>Kontak</td>
+          </tr>
+        </table>
+        </th>
+      </tr>
+    </thead>
+  </table>
+  <tfoot>
+    <tr>
+      <td>
+        <table border="0" width="100%" height="40">
+        </table>
+      </td>
+    </tr>
+  </tfoot>
+  <tbody>
+      <tr>
+        <td>
+          <div class="content">
+            <div class="div1" align="center">
+              <div class="log">
+                <b>LOGIN</b>
+              </div>
+              <div id="formlogin">
+                <form name="fform">
+                  <div class="kotak-input">
+                  <label class="label">Username</label>
+                  <input class="input" type="text" placeholder="Username" name="username">
+                  </div>
+                  <div class="kotak-input">
+                  <label class="label">Password</label>
+                  <input class="input" type="password" placeholder="Password" name="password">
+                  </div>
+                </form>
+                <button id="tombol" onclick="login();">Login</button>
+              </div>
+
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <table border="0"width="100%">
+              <th> | JOGJA ISTIMEWA TV
+                <a href="http://tv.jogjaprov.go.id/">
+                  <center><img src="logo_jogja.jpg"height="200px" width="400px">
+                </a></center>
+              </th>
+              <th> | PETA 
+              <center><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15811.266454910745!2d110.369244!3d-7.809229000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x960b776ae6f407ba!2sDinas%20Komunikasi%20dan%20Informatika%20DIY!5e0!3m2!1sid!2sus!4v1649003481530!5m2!1sid!2sus" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>     
+              </th>
+              <td align="middle"> | KONTAK
+                <p><b>ALAMAT : </b>Jl. Brigjen Katamso Komplek THR Yogyakarta Indonesia</p>
+                <p><b>TELEPON : </b>(0274) 373444</p>
+                <p><b>FAX : </b>(0274) 374496</p>
+                <p><b>EMAIL : </b>diskominfo@jogjaprov.go.id</p>
+              </td>
+
+          </table>
+        </th>
+      </tr>
+  </tbody>
+</body>
+</html>
